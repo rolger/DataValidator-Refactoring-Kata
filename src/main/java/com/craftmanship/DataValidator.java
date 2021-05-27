@@ -10,6 +10,12 @@ import com.craftmanship.restcountries.CountryDescription;
 
 public class DataValidator {
 
+	private CountryInfoService countryInfoService;
+
+	public DataValidator(CountryInfoService countryInfoService) {
+		this.countryInfoService = countryInfoService;
+	}
+
 	public List<ErrorInfo> check(HashMap<Integer, List<String>> data) {
 
 		List<ErrorInfo> errors = new ArrayList<>();
@@ -46,7 +52,7 @@ public class DataValidator {
 	}
 
 	private boolean validC(String string) {
-		final List<CountryDescription> countryDescriptions = CountryInfoService.getAllCountries();
+		final List<CountryDescription> countryDescriptions = countryInfoService.getAllCountries();
 		return countryDescriptions.stream().anyMatch(c -> c.getAlpha2Code().equals(string));
 	}
 

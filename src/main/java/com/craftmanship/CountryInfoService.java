@@ -6,7 +6,7 @@ import com.craftmanship.restcountries.CountryDescription;
 
 public class CountryInfoService {
 
-	public static List<CountryDescription> getAllCountries() {
+	public List<CountryDescription> getAllCountries() {
 		throw new RuntimeException("Should not be Unit Tested");
 	}
 
