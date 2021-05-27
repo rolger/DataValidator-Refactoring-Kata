@@ -2,11 +2,10 @@ package com.craftmanship;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-
-import com.craftmanship.restcountries.CountryDescription;
+import java.util.Map;
 
 public class DataValidator {
 
@@ -16,7 +15,7 @@ public class DataValidator {
 		this.countryInfoService = countryInfoService;
 	}
 
-	public List<ErrorInfo> check(HashMap<Integer, List<String>> data) {
+	public List<ErrorInfo> check(Map<Integer, List<String>> data) {
 
 		List<ErrorInfo> errors = new ArrayList<>();
 		data.forEach((row, columns) -> {
@@ -26,7 +25,7 @@ public class DataValidator {
 					errors.add(new ErrorInfo(row, "first name must contain characters"));
 				}
 
-				if (validName(columns.get(1))) {
+				if (!validName(columns.get(1))) {
 					errors.add(new ErrorInfo(row, "last name must contain characters"));
 				}
 
@@ -38,7 +37,7 @@ public class DataValidator {
 					errors.add(new ErrorInfo(row, String.format("birthdate (%s) can not be parsed", columns.get(3))));
 				}
 
-				if (!invalidMoney(columns.get(4))) {
+				if (invalidMoney(columns.get(4))) {
 					errors.add(new ErrorInfo(row, String.format("income (%s) can not be parsed", columns.get(4))));
 				}
 			}
@@ -52,14 +51,13 @@ public class DataValidator {
 	}
 
 	private boolean validC(String string) {
-		final List<CountryDescription> countryDescriptions = countryInfoService.getAllCountries();
-		return countryDescriptions.stream().anyMatch(c -> c.getAlpha2Code().equals(string));
+		return countryInfoService.getAllCountries().stream().anyMatch(c -> c.equals(string));
 	}
 
 	private static boolean validDate(String string) {
 		try {
 			LocalDate.parse(string);
-		} catch (NumberFormatException e) {
+		} catch (DateTimeParseException  e) {
 			return false;
 		}
 		return true;
