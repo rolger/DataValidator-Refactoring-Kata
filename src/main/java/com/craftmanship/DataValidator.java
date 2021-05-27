@@ -6,8 +6,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import com.craftmanship.restcountries.CountryDescription;
-
 public class DataValidator {
 
 	private CountryInfoService countryInfoService;
@@ -52,8 +50,8 @@ public class DataValidator {
 	}
 
 	private boolean validC(String string) {
-		final List<CountryDescription> countryDescriptions = countryInfoService.getAllCountries();
-		return countryDescriptions.stream().anyMatch(c -> c.getAlpha2Code().equals(string));
+		final List<String> countryDescriptions = countryInfoService.getAllCountries();
+		return countryDescriptions.stream().anyMatch(c -> c.equals(string));
 	}
 
 	private static boolean validDate(String string) {
