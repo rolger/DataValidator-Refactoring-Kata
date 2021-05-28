@@ -2,9 +2,10 @@ package com.craftmanship;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class DataValidator {
 
@@ -14,7 +15,7 @@ public class DataValidator {
 		this.countryInfoService = countryInfoService;
 	}
 
-	public List<ErrorInfo> check(HashMap<Integer, List<String>> data) {
+	public List<ErrorInfo> check(Map<Integer, List<String>> data) {
 
 		List<ErrorInfo> errors = new ArrayList<>();
 		data.forEach((row, columns) -> {
@@ -50,14 +51,13 @@ public class DataValidator {
 	}
 
 	private boolean validC(String string) {
-		final List<String> countryDescriptions = countryInfoService.getAllCountries();
-		return countryDescriptions.stream().anyMatch(c -> c.equals(string));
+		return countryInfoService.getAllCountries().stream().anyMatch(c -> c.equals(string));
 	}
 
 	private static boolean validDate(String string) {
 		try {
 			LocalDate.parse(string);
-		} catch (NumberFormatException e) {
+		} catch (DateTimeParseException  e) {
 			return false;
 		}
 		return true;
