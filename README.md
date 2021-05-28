@@ -11,23 +11,23 @@ Anfangs ist die Logik noch sehr einfach. Oft ändern sich die fachlichen Anforde
 - Änderungen/Fehler in Validierung
 - Mehrere Validierungen für ein Feld
 
-## Vergleichbare andere Katas
-- Email Sender code refactroing kata
-- error conditions refactroing kata?
-- ValidateAndAddProduct-Refactoring-Kata
-
-## welche Wege stehen uns zur Verfügung
+## Welche Wege stehen uns zur Verfügung
 - bottom up refactoring
 - top down
 - mixed?
 
-## welches Design Möglichkeiten stehen zur Verfügung
+## Welches Design Möglichkeiten stehen zur Verfügung
 -  Liste von commands
 -  Liste von Specifications
 -  Monade
 -  Composite Pattern
 -  Template Method
 -  Vavr Validation Framework?
+
+## Bonus Aufgaben
+
+- Entferne die Primitve Obsession im API
+
 
 ```
 // v1
@@ -45,3 +45,9 @@ List<ValidationSpec> specs = List.of(
 List<ErrorInfo> errors = specs.stream.flatMap(ValidationSpec::valdiate).collect(....);
 
 ```
+
+## Vergleichbare andere Katas
+- Email Sender code refactroing kata
+- error conditions refactroing kata?
+- ValidateAndAddProduct-Refactoring-Kata
+
