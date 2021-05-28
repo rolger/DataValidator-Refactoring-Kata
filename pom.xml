@@ -5,8 +5,9 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.craftmanship</groupId>
-	<artifactId>refactoring-validator</artifactId>
+	<groupId>org.rolger</groupId>
+	<artifactId>data-validator</artifactId>
+	<name>Data Validator Refactoring Kata</name>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
@@ -33,21 +34,6 @@
 			<version>3.15.0</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.mashape.unirest</groupId>
-			<artifactId>unirest-java</artifactId>
-			<version>1.4.9</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-core</artifactId>
-			<version>2.9.9</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-			<version>2.9.9.2</version>
-		</dependency>
 		<dependency>
 			<groupId>com.approvaltests</groupId>
 			<artifactId>approvaltests</artifactId>
