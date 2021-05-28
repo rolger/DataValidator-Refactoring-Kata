@@ -24,7 +24,7 @@ public class DataValidator {
 					errors.add(new ErrorInfo(row, "first name must contain characters"));
 				}
 
-				if (validName(columns.get(1))) {
+				if (!validName(columns.get(1))) {
 					errors.add(new ErrorInfo(row, "last name must contain characters"));
 				}
 
@@ -36,7 +36,7 @@ public class DataValidator {
 					errors.add(new ErrorInfo(row, String.format("birthdate (%s) can not be parsed", columns.get(3))));
 				}
 
-				if (!invalidMoney(columns.get(4))) {
+				if (invalidMoney(columns.get(4))) {
 					errors.add(new ErrorInfo(row, String.format("income (%s) can not be parsed", columns.get(4))));
 				}
 			}
