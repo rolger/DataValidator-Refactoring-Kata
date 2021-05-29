@@ -47,7 +47,6 @@ List<ErrorInfo> errors = specs.stream.flatMap(ValidationSpec::valdiate).collect(
 ```
 
 ## Vergleichbare andere Katas
-- Email Sender code refactroing kata
-- error conditions refactroing kata?
-- ValidateAndAddProduct-Refactoring-Kata
+- [Clarify-Exception-Refactoring-Kata](https://github.com/emilybache/Clarify-Exception-Refactoring-Kata)
+- [ValidateAndAddProduct-Refactoring-Kata](https://github.com/emilybache/ValidateAndAddProduct-Refactoring-Kata)
 
