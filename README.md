@@ -1,4 +1,4 @@
-# Data-Validator-Refactoring-Kata
+# DataValidator-Refactoring-Kata
 
 ## Idee
 Bevor Daten verarbeitet werden müssen sie oft validiert werden. Besonders an den Grenzen unserer Domain wollen überpüfen, ob die gelieferten Daten fachlich korrekt sind z.B. beim Import eines CSV Files.
@@ -17,7 +17,7 @@ Anfangs ist die Logik noch sehr einfach. Oft ändern sich die fachlichen Anforde
 - mixed?
 
 ## Welches Design Möglichkeiten stehen zur Verfügung
--  Liste von commands
+-  Liste von Commands
 -  Liste von Specifications
 -  Monade
 -  Composite Pattern
@@ -26,28 +26,9 @@ Anfangs ist die Logik noch sehr einfach. Oft ändern sich die fachlichen Anforde
 
 ## Bonus Aufgaben
 
-- Entferne die Primitve Obsession im API
-
-
-```
-// v1
-List<ErrorInfo> errors = new ValidatorCollector()
-	.validate(t -> Validators::validFirstName, "first name must contain characters", columns.get(0))
-	.validate(t -> Validators::validLastName, "last name must contain characters", columns.get(1))
-	.validate(t -> Validators::validXYZ, "last name must contain characters", columns.get(4))
-	.errors();
-
-// v2
-List<ValidationSpec> specs = List.of(
-	new ValidationSpec(t -> Validators::validFirstName, "first name must contain characters", columns.get(0))
-	new ValidationSpec(t -> Validators::validXYZ, "last name must contain characters", columns.get(4))
-);
-List<ErrorInfo> errors = specs.stream.flatMap(ValidationSpec::valdiate).collect(....);
-
-```
+- Finde und entferne die Primitve Obsession im API
 
 ## Vergleichbare andere Katas
-- Email Sender code refactroing kata
-- error conditions refactroing kata?
-- ValidateAndAddProduct-Refactoring-Kata
+- [Clarify-Exception-Refactoring-Kata](https://github.com/emilybache/Clarify-Exception-Refactoring-Kata)
+- [ValidateAndAddProduct-Refactoring-Kata](https://github.com/emilybache/ValidateAndAddProduct-Refactoring-Kata)
 
