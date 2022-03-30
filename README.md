@@ -17,7 +17,7 @@ Anfangs ist die Logik noch sehr einfach. Oft ändern sich die fachlichen Anforde
 - mixed?
 
 ## Welches Design Möglichkeiten stehen zur Verfügung
--  Liste von commands
+-  Liste von Commands
 -  Liste von Specifications
 -  Monade
 -  Composite Pattern
@@ -26,25 +26,7 @@ Anfangs ist die Logik noch sehr einfach. Oft ändern sich die fachlichen Anforde
 
 ## Bonus Aufgaben
 
-- Entferne die Primitve Obsession im API
-
-
-```
-// v1
-List<ErrorInfo> errors = new ValidatorCollector()
-	.validate(t -> Validators::validFirstName, "first name must contain characters", columns.get(0))
-	.validate(t -> Validators::validLastName, "last name must contain characters", columns.get(1))
-	.validate(t -> Validators::validXYZ, "last name must contain characters", columns.get(4))
-	.errors();
-
-// v2
-List<ValidationSpec> specs = List.of(
-	new ValidationSpec(t -> Validators::validFirstName, "first name must contain characters", columns.get(0))
-	new ValidationSpec(t -> Validators::validXYZ, "last name must contain characters", columns.get(4))
-);
-List<ErrorInfo> errors = specs.stream.flatMap(ValidationSpec::valdiate).collect(....);
-
-```
+- Finde und entferne die Primitve Obsession im API
 
 ## Vergleichbare andere Katas
 - [Clarify-Exception-Refactoring-Kata](https://github.com/emilybache/Clarify-Exception-Refactoring-Kata)
