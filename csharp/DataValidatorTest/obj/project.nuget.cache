@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RQZFqZW1oFZNAH3RJLWf2a0ttjDPZrO1liLdfV0PCgqZi4JKwfzD3/WMpVpoqu3fkWgtyd08TgrUCsMRirwu+A==",
+  "dgSpecHash": "XGjZgwRL47kFAcYTvJhP5tL2cILk9kIlcvaW/GwhuPaeCrpA1TaKUbIzs+qADA5KQtHELkDXRUNipHpM0ZaZzw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\rolandgerm\\projects\\community\\DataValidator-Refactoring-Kata\\csharp\\DataValidatorTest\\DataValidatorTest.csproj",
+  "projectFilePath": "C:\\Users\\rolandgerm\\projects\\community\\DataValidator-Refactoring-Kata\\csharp\\DataValidatorTest\\DataValidatorTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rolandgerm\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\rolandgerm\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
