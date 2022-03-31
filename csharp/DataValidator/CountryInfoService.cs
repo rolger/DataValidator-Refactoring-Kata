@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections;
 
-namespace DataValidatorProject
+namespace DataValidator;
+
+public class CountryInfoService
 {
-    public class CountryInfoService
+    public virtual IEnumerable GetAllCountries()
     {
-        public List<string> getAllCountries()
-        {
-            throw new Exception("Should not be Unit Tested");
-        }
+        throw new Exception("Should not be Unit Tested");
     }
 }

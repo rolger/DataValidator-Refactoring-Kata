@@ -1,17 +1,28 @@
-using DataValidatorProject;
+using System.Collections;
+using System.Collections.Generic;
+using DataValidator;
+using FluentAssertions;
 using Xunit;
 
-namespace DataValidatorTest
+namespace DataValidatorTest;
+
+public class DataValidatorTest
 {
-    public class DataValidatorTest
+    [Fact]
+    public void Test()
     {
-        [Fact]
-        public void Test()
-        {
-            CountryInfoService countryInfoService = new CountryInfoService();
-            DataValidator data = new DataValidator(countryInfoService);
-            data.Check(null);
-            Assert.True(false, "Not yet implemented");
-        }
+        var dataValidator = new DataValidator.DataValidator(new CountryInfoServiceFake());
+
+        var errors = dataValidator.Check(new Dictionary<int, List<string>>());
+
+        errors.Should().Be("Implement your tests here");
+    }
+}
+
+public class CountryInfoServiceFake : CountryInfoService
+{
+    public override IEnumerable GetAllCountries()
+    {
+        return new ArrayList();
     }
 }
