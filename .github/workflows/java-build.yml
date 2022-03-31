@@ -2,9 +2,19 @@
 
 name: java-build
 
+env:
+  PROJECT_DIR: java
+  
 # Controls when the action will run. 
 on:
   push:
+    branches:
+      - with_tests
+    paths:
+      - 'java/**'
+      - '**/java-build.yml'
+      
+  pull_request:
     branches:
       - with_tests
     paths:
@@ -18,7 +28,10 @@ defaults:
 jobs:
   # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
+    defaults:
+      run:
+        working-directory: ./${{ env.PROJECT_DIR }}  
+
     runs-on: ubuntu-latest
 
     steps:
@@ -46,4 +59,4 @@ jobs:
         uses: EnricoMi/publish-unit-test-result-action@v1.17
         if: always()
         with:
-          files: ./java/target/**/*.xml
+          files: ./${{ env.PROJECT_DIR }}/target/**/*.xml
