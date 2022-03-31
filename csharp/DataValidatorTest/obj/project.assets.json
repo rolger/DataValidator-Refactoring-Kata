@@ -5995,11 +5995,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\rolandgerm\\projects\\community\\DataValidator-Refactoring-Kata\\csharp\\DataValidatorTest\\DataValidatorTest.csproj",
+      "projectUniqueName": "C:\\Users\\rolandgerm\\projects\\community\\DataValidator-Refactoring-Kata\\csharp\\DataValidatorTest\\DataValidatorTest.csproj",
       "projectName": "DataValidatorTest",
-      "projectPath": "c:\\Users\\rolandgerm\\projects\\community\\DataValidator-Refactoring-Kata\\csharp\\DataValidatorTest\\DataValidatorTest.csproj",
+      "projectPath": "C:\\Users\\rolandgerm\\projects\\community\\DataValidator-Refactoring-Kata\\csharp\\DataValidatorTest\\DataValidatorTest.csproj",
       "packagesPath": "C:\\Users\\rolandgerm\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\rolandgerm\\projects\\community\\DataValidator-Refactoring-Kata\\csharp\\DataValidatorTest\\obj\\",
+      "outputPath": "C:\\Users\\rolandgerm\\projects\\community\\DataValidator-Refactoring-Kata\\csharp\\DataValidatorTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6020,8 +6020,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Users\\rolandgerm\\projects\\community\\DataValidator-Refactoring-Kata\\csharp\\DataValidator\\DataValidator.csproj": {
-              "projectPath": "c:\\Users\\rolandgerm\\projects\\community\\DataValidator-Refactoring-Kata\\csharp\\DataValidator\\DataValidator.csproj"
+            "C:\\Users\\rolandgerm\\projects\\community\\DataValidator-Refactoring-Kata\\csharp\\DataValidator\\DataValidator.csproj": {
+              "projectPath": "C:\\Users\\rolandgerm\\projects\\community\\DataValidator-Refactoring-Kata\\csharp\\DataValidator\\DataValidator.csproj"
             }
           }
         }
