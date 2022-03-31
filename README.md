@@ -1,5 +1,7 @@
 # DataValidator-Refactoring-Kata
 
+![example workflow](https://github.com/github/docs/actions/workflows/java-build.yml/badge.svg)
+
 ## Idee
 Bevor Daten verarbeitet werden müssen sie oft validiert werden. Besonders an den Grenzen unserer Domain wollen überpüfen, ob die gelieferten Daten fachlich korrekt sind z.B. beim Import eines CSV Files.
 
