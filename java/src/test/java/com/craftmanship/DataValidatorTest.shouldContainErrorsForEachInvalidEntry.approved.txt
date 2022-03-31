@@ -1,7 +1,0 @@
-Invalid data in row 1 (last name must contain characters)
-Invalid data in row 2 (first name must contain characters)
-Invalid data in row 3 (first name must contain characters)
-Invalid data in row 4 (country code (DE) doesn't exist)
-Invalid data in row 5 (birthdate (not a date) can not be parsed)
-Invalid data in row 6 (income (not a BigDecimal) can not be parsed)
-Invalid data in row 7 (income (-1) can not be parsed)
