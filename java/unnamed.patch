@@ -1,0 +1,303 @@
+Index: java/.idea/.gitignore
+===================================================================
+diff --git a/java/.idea/.gitignore b/java/.idea/.gitignore
+deleted file mode 100644
+--- a/java/.idea/.gitignore	(revision c6031a5647ff765b2ed6aa7cc4f86cd24d158fbc)
++++ /dev/null	(revision c6031a5647ff765b2ed6aa7cc4f86cd24d158fbc)
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+Index: java/.idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java/.idea/compiler.xml b/java/.idea/compiler.xml
+deleted file mode 100644
+--- a/java/.idea/compiler.xml	(revision c6031a5647ff765b2ed6aa7cc4f86cd24d158fbc)
++++ /dev/null	(revision c6031a5647ff765b2ed6aa7cc4f86cd24d158fbc)
+@@ -1,13 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="CompilerConfiguration">
+-    <annotationProcessing>
+-      <profile name="Maven default annotation processors profile" enabled="true">
+-        <sourceOutputDir name="target/generated-sources/annotations" />
+-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+-        <outputRelativeToContentRoot value="true" />
+-        <module name="data-validator" />
+-      </profile>
+-    </annotationProcessing>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: java/.idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java/.idea/jarRepositories.xml b/java/.idea/jarRepositories.xml
+deleted file mode 100644
+--- a/java/.idea/jarRepositories.xml	(revision c6031a5647ff765b2ed6aa7cc4f86cd24d158fbc)
++++ /dev/null	(revision c6031a5647ff765b2ed6aa7cc4f86cd24d158fbc)
+@@ -1,20 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="RemoteRepositoriesConfiguration">
+-    <remote-repository>
+-      <option name="id" value="central" />
+-      <option name="name" value="Central Repository" />
+-      <option name="url" value="https://repo.maven.apache.org/maven2" />
+-    </remote-repository>
+-    <remote-repository>
+-      <option name="id" value="central" />
+-      <option name="name" value="Maven Central repository" />
+-      <option name="url" value="https://repo1.maven.org/maven2" />
+-    </remote-repository>
+-    <remote-repository>
+-      <option name="id" value="jboss.community" />
+-      <option name="name" value="JBoss Community repository" />
+-      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+-    </remote-repository>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: java/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java/.idea/misc.xml b/java/.idea/misc.xml
+deleted file mode 100644
+--- a/java/.idea/misc.xml	(revision c6031a5647ff765b2ed6aa7cc4f86cd24d158fbc)
++++ /dev/null	(revision c6031a5647ff765b2ed6aa7cc4f86cd24d158fbc)
+@@ -1,15 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="MavenProjectsManager">
+-    <option name="originalFiles">
+-      <list>
+-        <option value="$PROJECT_DIR$/pom.xml" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK" />
+-  <component name="ProjectType">
+-    <option name="id" value="jpab" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: java/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java/.idea/vcs.xml b/java/.idea/vcs.xml
+deleted file mode 100644
+--- a/java/.idea/vcs.xml	(revision c6031a5647ff765b2ed6aa7cc4f86cd24d158fbc)
++++ /dev/null	(revision c6031a5647ff765b2ed6aa7cc4f86cd24d158fbc)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: java/src/main/java/com/craftmanship/Data.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java/src/main/java/com/craftmanship/Data.java b/java/src/main/java/com/craftmanship/Data.java
+new file mode 100644
+--- /dev/null	(date 1648713805771)
++++ b/java/src/main/java/com/craftmanship/Data.java	(date 1648713805771)
+@@ -0,0 +1,57 @@
++package com.craftmanship;
++
++import java.math.BigDecimal;
++import java.time.LocalDate;
++import java.util.List;
++
++public class Data {
++    private String firstName;
++    private String lastName;
++    private String countryCode;
++    private LocalDate birthday;
++    private BigDecimal income;
++
++    public Data(List<String> inputParameters) {
++        firstName = inputParameters.get(0);
++    }
++
++    public String getFirstName() {
++        return firstName;
++    }
++
++    public void setFirstName(String firstName) {
++        this.firstName = firstName;
++    }
++
++    public String getLastName() {
++        return lastName;
++    }
++
++    public void setLastName(String lastName) {
++        this.lastName = lastName;
++    }
++
++    public String getCountryCode() {
++        return countryCode;
++    }
++
++    public void setCountryCode(String countryCode) {
++        this.countryCode = countryCode;
++    }
++
++    public LocalDate getBirthday() {
++        return birthday;
++    }
++
++    public void setBirthday(LocalDate birthday) {
++        this.birthday = birthday;
++    }
++
++    public BigDecimal getIncome() {
++        return income;
++    }
++
++    public void setIncome(BigDecimal income) {
++        this.income = income;
++    }
++}
+Index: java/src/main/java/com/craftmanship/DataPredicates.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java/src/main/java/com/craftmanship/DataPredicates.java b/java/src/main/java/com/craftmanship/DataPredicates.java
+new file mode 100644
+--- /dev/null	(date 1648713805780)
++++ b/java/src/main/java/com/craftmanship/DataPredicates.java	(date 1648713805780)
+@@ -0,0 +1,10 @@
++package com.craftmanship;
++
++import java.util.function.Predicate;
++
++public class DataPredicates {
++
++    public static Predicate<Data> isNameValid() {
++        return p -> !p.getFirstName().isBlank()  &&  p.getFirstName().chars().allMatch(Character::isAlphabetic);
++    }
++}
+Index: java/src/main/java/com/craftmanship/DataValidator.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java/src/main/java/com/craftmanship/DataValidator.java b/java/src/main/java/com/craftmanship/DataValidator.java
+--- a/java/src/main/java/com/craftmanship/DataValidator.java	(revision c6031a5647ff765b2ed6aa7cc4f86cd24d158fbc)
++++ b/java/src/main/java/com/craftmanship/DataValidator.java	(date 1648713805744)
+@@ -6,6 +6,9 @@
+ import java.util.ArrayList;
+ import java.util.List;
+ import java.util.Map;
++import java.util.function.Predicate;
++
++import static com.craftmanship.DataPredicates.*;
+ 
+ public class DataValidator {
+ 
+@@ -21,6 +24,10 @@
+ 		data.forEach((row, columns) -> {
+ 
+ 			if (columns != null && !columns.isEmpty()) {
++				Data data1 = new Data(columns);
++				Predicate<Data> nameValid = isNameValid();
++
++				checkValidName(columns.get(0), row, errors);
+ 				if (!validName(columns.get(0))) {
+ 					errors.add(new ErrorInfo(row, "first name must contain characters"));
+ 				}
+@@ -46,6 +53,12 @@
+ 		return errors;
+ 	}
+ 
++	private void checkValidName(String column, int row , List<ErrorInfo> errors) {
++		if (!validName(column)) {
++			errors.add(new ErrorInfo(row, "first name must contain characters"));
++		}
++	}
++
+ 	private boolean validName(String value) {
+ 		return value != null && !value.isBlank() && value.chars().allMatch(Character::isAlphabetic);
+ 	}
+diff --git a/csharp/.vs/DataValidator/v17/TestStore/0/000.testlog b/csharp/.vs/DataValidator/v17/TestStore/0/000.testlog
+index 1982abdd53b76f31aa4ecb34fbaa94789931c591..f884b8b4ac49662a8718ee9c3b912e0910ad07d1
+GIT binary patch
+literal 15445
+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
+VFX{hNzn`vs^NrJ~^>L=w{{xE4f6D*>
+
