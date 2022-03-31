@@ -1,0 +1,15 @@
+C:\Users\katrinheiderer\source\repos\DataValidator-Refactoring-Kata\csharp\DataValidator\bin\Debug\net6.0\DataValidator.exe
+C:\Users\katrinheiderer\source\repos\DataValidator-Refactoring-Kata\csharp\DataValidator\bin\Debug\net6.0\DataValidator.deps.json
+C:\Users\katrinheiderer\source\repos\DataValidator-Refactoring-Kata\csharp\DataValidator\bin\Debug\net6.0\DataValidator.runtimeconfig.json
+C:\Users\katrinheiderer\source\repos\DataValidator-Refactoring-Kata\csharp\DataValidator\bin\Debug\net6.0\DataValidator.dll
+C:\Users\katrinheiderer\source\repos\DataValidator-Refactoring-Kata\csharp\DataValidator\bin\Debug\net6.0\DataValidator.pdb
+C:\Users\katrinheiderer\source\repos\DataValidator-Refactoring-Kata\csharp\DataValidator\obj\Debug\net6.0\DataValidator.csproj.AssemblyReference.cache
+C:\Users\katrinheiderer\source\repos\DataValidator-Refactoring-Kata\csharp\DataValidator\obj\Debug\net6.0\DataValidator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\katrinheiderer\source\repos\DataValidator-Refactoring-Kata\csharp\DataValidator\obj\Debug\net6.0\DataValidator.AssemblyInfoInputs.cache
+C:\Users\katrinheiderer\source\repos\DataValidator-Refactoring-Kata\csharp\DataValidator\obj\Debug\net6.0\DataValidator.AssemblyInfo.cs
+C:\Users\katrinheiderer\source\repos\DataValidator-Refactoring-Kata\csharp\DataValidator\obj\Debug\net6.0\DataValidator.csproj.CoreCompileInputs.cache
+C:\Users\katrinheiderer\source\repos\DataValidator-Refactoring-Kata\csharp\DataValidator\obj\Debug\net6.0\DataValidator.dll
+C:\Users\katrinheiderer\source\repos\DataValidator-Refactoring-Kata\csharp\DataValidator\obj\Debug\net6.0\refint\DataValidator.dll
+C:\Users\katrinheiderer\source\repos\DataValidator-Refactoring-Kata\csharp\DataValidator\obj\Debug\net6.0\DataValidator.pdb
+C:\Users\katrinheiderer\source\repos\DataValidator-Refactoring-Kata\csharp\DataValidator\obj\Debug\net6.0\DataValidator.genruntimeconfig.cache
+C:\Users\katrinheiderer\source\repos\DataValidator-Refactoring-Kata\csharp\DataValidator\obj\Debug\net6.0\ref\DataValidator.dll
